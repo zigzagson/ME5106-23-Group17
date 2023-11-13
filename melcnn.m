@@ -106,7 +106,7 @@ imageData = cat(4, filtered_data.image);
 
 % Train the CNN
 net = trainNetwork(imageData, labels, layers, options);
-
+view(net);
 % 提取被排除的数据
 excluded_data = data(ismember({data.var}, {'B10', 'C9', 'C13', 'C14'}));
 
